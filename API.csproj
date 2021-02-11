@@ -6,9 +6,13 @@
 
   <ItemGroup>
     <Compile Remove="BAL\**" />
+    <Compile Remove="DAL\**" />
     <Content Remove="BAL\**" />
+    <Content Remove="DAL\**" />
     <EmbeddedResource Remove="BAL\**" />
+    <EmbeddedResource Remove="DAL\**" />
     <None Remove="BAL\**" />
+    <None Remove="DAL\**" />
   </ItemGroup>
 
 </Project>
