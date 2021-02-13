@@ -91,7 +91,7 @@ namespace API01
                                     Type = ReferenceType.SecurityScheme,
                                     Id = "Bearer"
                                 }
-                            }, new string[] {}
+                            }, Array.Empty<string>()
                     }
                 });
             });
@@ -114,7 +114,6 @@ namespace API01
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("./swagger/v1/swagger.json", "For Developer (◍•ᴗ•◍)❤");
-
                 c.RoutePrefix = string.Empty;
             });
             app.UseRouting();
